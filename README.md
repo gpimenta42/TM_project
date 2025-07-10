@@ -18,10 +18,10 @@
 
 ## Results
 
-We tested different combinations of preprocessing techniques with each text embedder: 
+We evaluated various combinations of preprocessing techniques with different text embedders:
 - TF-IDF
-- Pre-trained (and fine-tuned) GloVe
-- Pre-trained (and fine-tuned) Transformer Encoder (BERT) 
+- Pre-trained and fine-tuned GloVe
+- Pre-trained and fine-tuned transformer-based encoders (e.g., BERT)
   
 
 | Preprocessing                                                                 | Feature Extractor                                                                 | Classifier          | F1-macro (avg) |
@@ -35,8 +35,10 @@ We tested different combinations of preprocessing techniques with each text embe
 
 ---
 
-We picked the top embedder and experimented with different classifiers <br>
-We also experimented with zero-shot classification with Llama
+We selected the top-performing embedder and tested it with various classifiers <br>
+Additionally, we explored zero-shot classification using Llama.
+
+
 
 | Preproc | Embedder   | Classifier        | F1-macro (avg) |
 |---------|------------|-------------------|----------------|
@@ -49,6 +51,10 @@ We also experimented with zero-shot classification with Llama
 
 
 ---
+
+Final model configuration:
+- Encoder with RashidNLP (fine-tuned DeBERTa)
+- Classification with SVM 
 
 ## 📊 Final Result on Test Set
 
