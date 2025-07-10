@@ -56,7 +56,7 @@ Final model configuration:
 - Encoder with RashidNLP (fine-tuned DeBERTa)
 - Classification with SVM 
 
-## 📊 Final Result on Test Set
+## Final Result on Test Set
 
 - **F1-macro**: **0.98**
 
