@@ -1,6 +1,6 @@
-# 💬 Financial Tweets Sentiment Analysis
+# Financial Tweets Sentiment Analysis
 
-### 👥 Project Members
+### Project Members
 - Gaspar Pereira  
 - Iris Moreira  
 - Rafael Borges  
@@ -8,7 +8,7 @@
 
 ---
 
-## 🧪 Experiments Workflow
+## Experiments Workflow
 
 <p align="center">
   <img width="800" alt="Experiments Workflow" src="https://github.com/user-attachments/assets/82f28c37-1cbf-4c4c-9fb8-05774878c9c5" />
@@ -16,23 +16,27 @@
 
 ---
 
-## 📊 Results
+## Results
 
-### 🧹 Preprocessing + Feature Extraction
+We tested different combinations of preprocessing techniques with each text embedder: 
+- TF-IDF
+- Pre-trained (and fine-tuned) GloVe
+- Pre-trained (and fine-tuned) Transformer Encoder (BERT) 
+  
 
 | Preprocessing                                                                 | Feature Extractor                                                                 | Classifier          | F1-macro (avg) |
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------|----------------|
 | Remove stop words, Stemming, Regex, Lowercase, Remove punctuation           | TF-IDF <br><sub>max_df: 0.8 \| min_df: 6 <br> ngram_range: (1, 2)</sub>         |                     | 71.75          |
 | Remove stop words, Lemmatization, Regex, Lowercase, Remove punctuation      | Glove Twitter 200                                                                | Logistic Regression | 62.68          |
-| -                                                                            | Encoder (*zcharaf*)                                                              |                     | 92.60          |
-|                                                                              | Encoder (*HugMaik*)                                                              |                     | 87.62          |
-|                                                                              | Encoder (*RashidNLP*)                                                            |                     | **95.58**      |
+| -                                                                            | Transformer Encoder (*zcharaf*)                                                              |                     | 92.60          |
+|                                                                              | Transformer Encoder (*HugMaik*)                                                              |                     | 87.62          |
+|                                                                              | Transformer Encoder (*RashidNLP*)                                                            |                     | **95.58**      |
 
-**Table 1**: Evaluation of the top performing preprocessing methods with respective feature extractors
 
 ---
 
-### 🤖 Classifier Comparison (with RashidNLP embedding)
+We picked the top embedder and experimented with different classifiers <br>
+We also experimented with zero-shot classification with Llama
 
 | Preproc | Embedder   | Classifier        | F1-macro (avg) |
 |---------|------------|-------------------|----------------|
@@ -43,13 +47,12 @@
 |         |            | Encoder Head                                                                                 | 86.59          |
 |         |            | Llama-3.1-SuperNova-Lite                                                                      | 71.87          |
 
-**Table 2**: Evaluation of the top performing classification models
 
 ---
 
-## 🏁 Final Result on Test Set
+## 📊 Final Result on Test Set
 
-- **F1-macro**: 🎯 **0.98**
+- **F1-macro**: **0.98**
 
 <p align="center">
   <img width="700" alt="Final Results" src="https://github.com/user-attachments/assets/dd3dc757-b54f-420a-82cf-d1995eca3ea7" />
