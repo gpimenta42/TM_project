@@ -1,5 +1,5 @@
 # Financial Tweets Sentiment Analysis
-### Text Mining project
+### Text Mining 
 ### Project Members
 - Gaspar Pereira  
 - Iris Moreira  
