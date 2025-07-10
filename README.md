@@ -30,7 +30,7 @@ We tested different combinations of preprocessing techniques with each text embe
 | Remove stop words, Lemmatization, Regex, Lowercase, Remove punctuation      | Glove Twitter 200                                                                | Logistic Regression | 62.68          |
 | -                                                                            | Transformer Encoder <br>(*zcharaf*)                                                              |                     | 92.60          |
 |                                                                              | Transformer Encoder (*HugMaik*)                                                              |                     | 87.62          |
-|                                                                              | Transformer Encoder (*RashidNLP*)                                                            |                     | **95.58**      |
+|                                                                              | Transformer Encoder (*RashidNLP*)                                                            |                     | **95.58** *     |
 
 
 ---
