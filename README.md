@@ -28,7 +28,7 @@ We tested different combinations of preprocessing techniques with each text embe
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------|---------------------|----------------|
 | Remove stop words, Stemming, Regex, Lowercase, Remove punctuation           | TF-IDF <br><sub>max_df: 0.8 \| min_df: 6 <br> ngram_range: (1, 2)</sub>         |                     | 71.75          |
 | Remove stop words, Lemmatization, Regex, Lowercase, Remove punctuation      | Glove Twitter 200                                                                | Logistic Regression | 62.68          |
-| -                                                                            | Transformer Encoder (*zcharaf*)                                                              |                     | 92.60          |
+| -                                                                            | Transformer Encoder <br>(*zcharaf*)                                                              |                     | 92.60          |
 |                                                                              | Transformer Encoder (*HugMaik*)                                                              |                     | 87.62          |
 |                                                                              | Transformer Encoder (*RashidNLP*)                                                            |                     | **95.58**      |
 
