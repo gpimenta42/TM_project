@@ -59,8 +59,4 @@ Final model configuration:
 ## Final Result on Test Set
 
 - **F1-macro**: **0.98**
-
-Feedback:
-<p align="center">
-  <img width="700" alt="Final Results" src="https://github.com/user-attachments/assets/dd3dc757-b54f-420a-82cf-d1995eca3ea7" />
-</p>
+Best result on the course  
