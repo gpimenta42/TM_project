@@ -58,5 +58,5 @@ Final model configuration:
 
 ## Final Result on Test Set
 
-- **F1-macro**: **0.98**
+- **F1-macro**: **0.98** <br>
 Best result on the course  
